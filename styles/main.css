@@ -1,0 +1,176 @@
+body{
+    background-color: #fff;
+}
+
+.mainDetail{
+    width: 80%;
+}
+
+.blured{
+    opacity: .5;
+    transition: opacity 300ms ease-in-out;
+}
+
+.container{
+    z-index:0;
+}
+
+.custom-center{
+    margin: auto;
+    width: 85%;
+}
+.navbar-nav {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+.row-img{
+    width: 70%!important;
+}
+
+.smallPrice{
+    text-decoration: line-through;
+    padding-right: 10px;
+    opacity: 0.8;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-nav {
+        position: relative;
+    }
+
+}
+
+
+.imgD{
+    border-radius: 10px;
+    border: #ccab81 2px solid;
+}
+
+
+.row div{
+    color:#ccab81
+}
+
+.off{
+    position: relative;
+    background-color:#ccab81;
+    width: 26%;
+    bottom: 91%;
+    left: 5%;
+    color: white;
+    padding: 3px;
+    border-radius: 15px;
+}
+
+.wid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.nav-item a{
+    color: #000!important;
+}
+
+.nav-item a:hover{
+    color: rgb(88, 88, 88)!important;
+    transition: 0.5s;
+}
+
+.nav-item a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2.5px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.nav-item a:hover:after {
+    width: 100%;
+    background: #ccab81;
+  }
+
+.aimg{
+    text-decoration: none;
+    color: #ccab81;
+}
+
+.aimg:hover{
+    color: #ccab81;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: 0.7s;
+}
+  
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+  #sidebar {
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    background-color: #FDDCB5;
+    right: -400px;
+    transition: all 600ms linear;
+    z-index:1;
+  }
+  
+
+  #sidebar.active{
+      right: 0px;
+  }
+
+  #sidebar ul li {
+    color: rgba(230, 230, 230, .9);
+    text-align: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid blue;
+    list-style: none;
+  }
+  
+  .logo {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto; 
+  }
+  
+.toggle-btn {
+    position: absolute;
+    cursor: pointer;
+}
+
+.pcarr{
+    color: black;
+}
+
+.carrito{
+    position: relative;
+    top:50px;
+}
+select {
+    background: transparent;
+    border: #ccab81 1px solid;
+    font-size: 14px;
+    height: 35px;
+    padding: 5px;
+    width: 100px;
+    border-radius: 5px;
+}
+
+.div-2{
+    height: 40%;
+}
+
+.addProduct{
+    width: 50%;
+    padding: 8px;
+    border-radius: 5px;
+    background-color:#FDDCB5 ;
+}

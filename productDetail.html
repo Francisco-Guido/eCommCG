@@ -17,100 +17,170 @@
 </head>
 
 <body class="d-flex flex-column align-items-center">
-    <div class="row row-img">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 d-flex justify-content-center">
-            <a href="#" class="navbar-brand brand"><img src="./img/logo.jpeg" alt="" width="250" height="100"></a>
-        </div>
-        <div class="col-md-4 d-flex flex-row-reverse flex-column ">
+    <div class="row col-12 row-img flex-row-reverse">
+        <div class="col-4 col-md-4 d-flex flex-row-reverse">
             <div class="toggle-btn">
-                <img src="./img/carrito.png" alt="" width="50" class="carrito">
+                <img src="./img/carrito.png" alt="" width="50" class="carrito mt-5">
             </div>
             <div id="sidebar">
-                <ul>
-                    <p class="pcarr">El carrito se encuentra vacio</p> <button id="close">cerrar</button>
-                    <div class="d-flex flex-column">
-                        <div class="d-flex mt-2">
-                            <img src="./img/foto3.jpg" alt="" height="100">
-                            <div class="d-flex flex-column px-5 mt-4">
-                                <h5>REMERA</h5>
-                                <p>1200$</p>
+                <div class="col-12 d-flex justify-content-between align-items-center mr-5">
+                    <p class="pcarr ms-3 my-auto">Carrito de Compras</p>
+                    <button id="close" class="my-auto">X</button>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <p class="pvacio text-center mt-4">El carrito de compras esta vacio</p>
+                </div>
+
+                <div class="row col-12">
+                    <div class="d-flex flex-column ms-3 carritoRes">
+                        <div class="d-flex mt-3 col-12" id="removerCompra">
+                            <div class="col-3">
+                                <img src="./img/foto3.jpg" alt="" height="100">
+                            </div>
+                            <div class="d-flex flex-column col-9">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="my-auto">Vestido</h5>
+                                    <button id="remover" class="cerrar"><img src="./img/trash.png" alt=""></button>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <div class="number-input morelesscar">
+                                        <button class="butonless"
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                        <input class="quantity2" min="1" max="5" name="quantity" value="1"
+                                            type="number">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                            class="plus"></button>
+                                    </div>
+                                    <p>1200$</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="d-flex mt-2">
-                            <img src="./img/foto3.jpg" alt="" height="100">
-                            <div class="d-flex flex-column px-5 mt-4">
-                                <h5>REMERA</h5>
-                                <p>1200$</p>
+                        <div class="d-flex mt-3 col-12">
+                            <div class="col-3">
+                                <img src="./img/foto3.jpg" alt="" height="100">
                             </div>
-                        </div>
-                        <div class="d-flex mt-2">
-                            <img src="./img/foto3.jpg" alt="" height="100">
-                            <div class="d-flex flex-column px-5 mt-4">
-                                <h5>REMERA</h5>
-                                <p>1200$</p>
+                            <div class="d-flex flex-column col-9">
+                                <div class="d-flex justify-content-between">
+                                    <h5 class="my-auto">Vestido</h5>
+                                    <button class="cerrar"><img src="./img/trash.png" alt=""></button>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <div class="number-input morelesscar">
+                                        <button class="butonless"
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                        <input class="quantity2" min="1" max="5" name="quantity" value="1"
+                                            type="number">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                            class="plus"></button>
+                                    </div>
+                                    <p>1200$</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </ul>
+                    <div class="d-flex col-12 justify-content-between ms-3 mt-3">
+                        <h5>Total</h5>
+                        <h6 class="mr-4">1200$</h6>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <nav class="navbar navbar-expand-md navbar-light custom-center pt-5 pb-5">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
-                aria-controls="toggleMobileMenu" aria-expanded="false" aria-lable="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 wid">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Pantalones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Remeras</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Combos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Combos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Combos</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="col-4 col-md-8 d-flex flex-row-reverse">
+            <a href="#" class="navbar-brand brand"><img src="./img/logo.jpeg" alt="" class="imgNav"></a>
         </div>
-    </nav>
+        
+        <div class="col-4 col-md-12">
+            <nav class="navbar navbar-expand-md navbar-light custom-center pt-5 pb-5">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggleMobileMenu"
+                    aria-controls="toggleMobileMenu" aria-expanded="false" aria-lable="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 wid">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Pantalones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Remeras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Combos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Combos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Combos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav> </div>
+    </div> 
 
     <main class="row mainDetail">
         <div class="col-12 col-sm-6 col-md-6">
             <div>
-            <a href="" class="aimg"><img src="./img/foto3.jpg" width="80%" height="75%" alt="..." class="imgD mx-auto d-block">
-            </a>
-        </div>
+                <a href="" class="aimg"><img src="./img/foto3.jpg" width="80%" height="75%" alt="..."
+                        class="imgD mx-auto d-block">
+                </a>
+            </div>
         </div>
         <div class="col-12 col-sm-6 col-md-6">
             <div class="d-flex flex-column justify-content-between div-2">
-            <ul class="list-inline">
-                <li class="list-inline-item">Lorem ipsum</li>>
-                <li class="list-inline-item">Phasellus iaculis</li>>
-                <li class="list-inline-item">Nulla volutpat</li>
-            </ul>
+                <ul class="list-inline">
+                    <li class="list-inline-item">Lorem ipsum</li>>
+                    <li class="list-inline-item">Phasellus iaculis</li>>
+                    <li class="list-inline-item">Nulla volutpat</li>
+                </ul>
                 <h1>Vestido</h1>
                 <h5><small class="smallPrice">$5000</small>$4000</h5>
-            <div class="d-flex flex-column">
-                <h6>Talle</h6>
-                <select name="asd">
-                    <option value="value1" selected>Small</option>
-                    <option value="value2">Medium</option>
-                    <option value="value3">Large</option>
-                </select>
-            </div>
-                <input type="number" min="1" max="5">
+                <div class="d-flex flex-column">
+                    <h6>Talle</h6>
+                    <select name="asd">
+                        <option value="value1" selected>Small</option>
+                        <option value="value2">Medium</option>
+                        <option value="value3">Large</option>
+                    </select>
+                </div>
+                <div class="number-input">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                    <input class="quantity" min="1" max="5" name="quantity" value="1" type="number">
+                    <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                        class="plus"></button>
+                </div>
                 <button class="addProduct">Agregar al carrito</button>
+                <h5 class="text-center off2">5% OFF</h5>
             </div>
+        </div>
+        <div class="row d-flex flex-column align-items-center mt-5">
+            <div class="d-flex secondCont">
+                <h4>Productos relacionados</h4>
+            </div>
+            <div class="row d-flex justify-content-between mt-3 secondCont">
+                <div class="col-12 col-sm-4 col-md-3 divs blured">
+                    <a href="" class="aimg"><img src="./img/foto3.jpg" width="100%" height="80%" alt="..." class="imgD">
+                        <h5 class="text-center">Remera</h5>
+                        <p class="text-center">$1450</p>
+                        <h6 class="text-center off3">Sin stock</h6>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <a href="" class="aimg"><img src="./img/foto3.jpg" width="100%" height="80%" alt="..." class="imgD">
+                        <h5 class="text-center">Remera</h5>
+                        <p class="text-center">$1450</p>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-4 col-md-3">
+                    <a href="" class="aimg"><img src="./img/foto3.jpg" width="100%" height="80%" alt="..." class="imgD">
+                        <h5 class="text-center">Remera</h5>
+                        <p class="text-center"><small class="smallPrice">1500$</small>$1450</p>
+                        <h6 class="text-center off3">50% OFF</h6>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </main>
     <script src="./scripts/main.js" charset="utf-8"></script>

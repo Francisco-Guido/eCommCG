@@ -17,7 +17,7 @@ btnClose.addEventListener('click', function () {
 });
 
 btnRemove.addEventListener('click', function () {
-  document.getElementByClassName('imgNav')[0].classList.remove()
+    document.getElementById('removerCompra').remove()
 });
 
 

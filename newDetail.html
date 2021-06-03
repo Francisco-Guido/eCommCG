@@ -14,19 +14,54 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/main2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column align-items-center">
-    <div class="row col-12 row-img flex-row-reverse">
-        <div class="col-4 col-md-4 d-flex flex-row-reverse">
+
+    <div class="row col-12 row-img mainIndex">
+        <div class="col-4 col-lg-4 col-md-4 d-flex">
+            <div class="toggle-btn2">
+                <img src="./img/menu.png" alt="" width="22" height="22" class="carrito mt-5">
+            </div>
+            <div id="sidebar2">
+                <div class="col-12 d-flex justify-content-between align-items-center mr-5">
+                    <h3 class="pcarr ms-3 my-auto mt-3">Categorias</h3>
+                    <button id="close2" class="my-auto pt-3">X</button>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 ms-3 mt-4">
+                    <h5 class="pt-4 h5a">
+                        <a href="#!" class="text-reset text-decoration-none categorias">Pantalones</a>
+                    </h5>
+                    <h5 class="pt-4">
+                        <a href="#!" class="text-reset text-decoration-none categorias">Remeras</a>
+                    </h5>
+                    <h5 class="pt-4">
+                        <a href="#!" class="text-reset text-decoration-none categorias">Combos</a>
+                    </h5>
+                    <h5 class="pt-4">
+                        <a href="#!" class="text-reset text-decoration-none categorias">Combos</a>
+                    </h5>
+                    <h5 class="pt-4">
+                        <a href="#!" class="text-reset text-decoration-none categorias">Combos</a>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-4 col-md-4 d-flex justify-content-center">
+            <a href="#"><img src="./img/logo.png" alt="" class="imgNav"></a>
+        </div>
+        <div class="col-4 col-lg-4 col-md-4 d-flex flex-row-reverse">
             <div class="toggle-btn">
                 <img src="./img/carrito.png" alt="" width="50" class="carrito mt-5">
             </div>
             <div id="sidebar">
                 <div class="col-12 d-flex justify-content-between align-items-center mr-5">
-                    <p class="pcarr ms-3 my-auto">Carrito de Compras</p>
-                    <button id="close" class="my-auto">X</button>
+                    <p class="pcarr mt-2 ms-3 my-auto">Carrito de Compras</p>
+                    <button id="close" class="my-auto mt-3">X</button>
                 </div>
                 <div class="d-flex justify-content-center">
                     <p class="pvacio text-center mt-4">El carrito de compras esta vacio</p>
@@ -36,12 +71,13 @@
                     <div class="d-flex flex-column ms-3">
                         <div class="d-flex mt-3 col-12" id="removerCompra">
                             <div class="col-3">
-                                <img src="./img/foto3.jpg" alt="" height="100">
+                                <img src="./img/foto2.jpg" alt="" height="100">
                             </div>
                             <div class="d-flex flex-column col-9">
                                 <div class="d-flex justify-content-between">
                                     <h5 class="my-auto">Vestido</h5>
                                     <button id="remover" class="cerrar"><img src="./img/trash.png" alt=""></button>
+                                    
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
                                     <div class="number-input morelesscar">
@@ -64,6 +100,7 @@
                                 <div class="d-flex justify-content-between">
                                     <h5 class="my-auto">Vestido</h5>
                                     <button class="cerrar"><img src="./img/trash.png" alt=""></button>
+                                    
                                 </div>
                                 <div class="d-flex justify-content-between mt-3">
                                     <div class="number-input morelesscar">
@@ -86,62 +123,26 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 col-md-8 d-flex flex-row-reverse">
-            <a href="#" class="navbar-brand brand"><img src="./img/logo.jpeg" alt="" class="imgNav"></a>
         </div>
-
-        <div class="col-4 col-md-12">
-            <nav class="navbar navbar-expand-md navbar-light custom-center pt-5 pb-5">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
-                        aria-lable="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 wid">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Todos los productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Remeras</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pantalones</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Vestidos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Combos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        
     </div>
 
-    <main class="row mainDetail">
-        <div class="col-12 col-sm-6 col-md-6">
-            <div>
-                <a href="" class="aimg"><img src="./img/foto3.jpg" width="80%" height="75%" alt="..."
-                        class="imgD mx-auto d-block">
-                </a>
+    <main class="row mainDetail mt-3">
+        <div class="row d-flex col-12 col-md-12 ps-4">
+            <div class="col-12 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
+                <img src="./img/foto1.jpg" alt="" height="100%" width="90%">
             </div>
-        </div>
-        <div class="col-12 col-sm-6 col-md-6">
-            <div class="d-flex flex-column justify-content-between div-2">
-                <ul class="list-inline">
-                    <li class="list-inline-item">Lorem ipsum</li>>
-                    <li class="list-inline-item">Phasellus iaculis</li>>
-                    <li class="list-inline-item">Nulla volutpat</li>
-                </ul>
-                <h1>Vestido</h1>
-                <h5><small class="smallPrice">$5000</small>$4000</h5>
-                <div class="d-flex flex-column">
-                    <h6>Talle</h6>
+            <div class="col-12 col-md-6 col-sm-12 d-flex flex-column justify-content-between divBuy">
+                <div>
+                    <span><a href="" class="text-decoration-none text-dark">Home ></a></span>
+                    <span><a href="" class="text-decoration-none text-dark">Buzos ></a></span>
+                    <span><a href="" class="text-decoration-none text-dark">Buzo rosado</a></span>
+                </div>
+                <div class="d-flex flex-column description">
+                <h2>Buzo rosado</h2>
+                <p><small class="smallPrice">1500$</small>$1450</p>
+            </div>
+                <div class="d-flex flex-column description">
+                    <span>Talle</span>
                     <select name="asd">
                         <option value="value1" selected>Small</option>
                         <option value="value2">Medium</option>
@@ -155,30 +156,29 @@
                         class="plus"></button>
                 </div>
                 <button class="addProduct">Agregar al carrito</button>
-                <h5 class="text-center off2">5% OFF</h5>
             </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-12 mt-5">
-            <div class="d-flex col-12 col-sm-12 col-md-12 ps-4">
-                <h4>Productos relacionados</h4>
+        <div class="col-12 col-sm-12 col-md-12 pt-5">
+            <div class="d-flex col-12 col-sm-12 col-md-12">
+                <h4 class="pRelacionados ps-4">Productos relacionados</h4>
             </div>
-            <div class="row d-flex justify-content-between mt-3 ps-4 col-12 col-sm-12 col-md-12">
+            <div class="row d-flex justify-content-between mt-3 col-12 col-sm-12 col-md-12 ps-4">
                 <div class="col-12 col-sm-4 col-md-3 divs blured">
                     <a href="" class="aimg"><img src="./img/foto3.jpg" width="100%" height="80%" alt="..." class="imgD">
-                        <h5 class="text-center">Remera</h5>
+                        <h5 class="text-center mt-2">Remera</h5>
                         <p class="text-center">$1450</p>
                         <h6 class="text-center off3">Sin stock</h6>
                     </a>
                 </div>
                 <div class="col-12 col-sm-4 col-md-3">
                     <a href="" class="aimg"><img src="./img/foto3.jpg" width="100%" height="80%" alt="..." class="imgD">
-                        <h5 class="text-center">Remera</h5>
+                        <h5 class="text-center mt-2">Remera</h5>
                         <p class="text-center">$1450</p>
                     </a>
                 </div>
                 <div class="col-12 col-sm-4 col-md-3">
                     <a href="" class="aimg"><img src="./img/foto3.jpg" width="100%" height="80%" alt="..." class="imgD">
-                        <h5 class="text-center">Remera</h5>
+                        <h5 class="text-center mt-2">Remera</h5>
                         <p class="text-center"><small class="smallPrice">1500$</small>$1450</p>
                         <h6 class="text-center off3">50% OFF</h6>
                     </a>
@@ -187,7 +187,8 @@
 
         </div>
     </main>
-    <footer class="text-center text-lg-start text-muted">
+
+    <footer class="text-center text-lg-start text-muted mainIndex mt-5">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
@@ -210,15 +211,15 @@
         <!-- Section: Social media -->
 
         <!-- Section: Links  -->
-        <section class="">
-            <div class="container text-center text-md-start mt-5">
+        <section>
+            <div class="text-center text-md-start mt-5">
                 <!-- Grid row -->
                 <div class="row mt-3">
                     <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 familyColor">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>Coronodas de Gloria
+                            <i class="fas fa-gem me-3"></i>Coronadas de Gloria
                         </h6>
                         <p>
                             Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -228,7 +229,7 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 familyColor">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
                             Productos
@@ -252,7 +253,7 @@
                     <!-- Grid column -->
 
                     <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 familyColor">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">
                             Contacto
@@ -274,7 +275,7 @@
         <!-- Section: Links  -->
 
     </footer>
-    <script src="./scripts/main.js" charset="utf-8"></script>
+    <script src="./scripts/main2.js" charset="utf-8"></script>
 </body>
 
 </html>
